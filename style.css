@@ -1,0 +1,78 @@
+/* Custom Properties */
+
+:root {
+  --first-color: #0059f7;
+  --title-color: #222222;
+  --text-color: #141414;
+  --text-color-light: #a6a6a6;
+  --body-color: #fbfefd;
+  --container-color: #ffffff;
+  --title-color-dark: #f1f3f2;
+  --text-color-dark: #c7d1cc;
+  --body--color-dark: #070e27;
+  --container-color-dark: #081131;
+}
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
