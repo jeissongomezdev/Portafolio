@@ -31,19 +31,45 @@
 
 <body>
   <!--========== HEADER ==========-->
-  <!-- <header class="header">
-    <div class="header-logo">
-      <a href="#" class="header-logo_brand"><img src="assets/logo.png" alt="Logo Jeisson Gómez"></a>
+  <header>
+    <div class="header-row">
+      <div class="brand-logo">
+        <a href="#">
+          <img src="assets/logo.png" alt="">
+        </a>
+      </div>
+      <button class="menu-toggle" id="menuToggle">
+        <svg viewBox="0 0 12 10" class="hamburger" height="40px" width="40px">
+          <path d="M10,2 L2,2" class="bar-1"></path>
+          <path d="M2,5 L10,5" class="bar-2"></path>
+          <path d="M10,8 L2,8" class="bar-3"></path>
+        </svg>
+      </button>
     </div>
-    <nav class="header-menu">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#inicio">Inicio</a></li>
-        <li class="nav__item"><a href="#sobre mí">Sobre mí</a></li>
-        <li class="nav__item"><a href="#proyectos">Proyectos</a></li>
-        <li class="nav__item"><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header> -->
+  </header>
+  <section class="fullpage-menu">
+    <div class="fullpage-menu-inner">
+      <div class="menu-bg">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul class="main-menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobremi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-nav-footer">
+        <ul class="social-links">
+          <li><a href="https://www.linkedin.com/in/jeissongomezdev/">Linkedin</a></li>
+          <li><a href="https://github.com/jeissongomezdev">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
   <!--========== HOME ==========-->
   <section class="container">
     <div class="home-hero">
@@ -51,12 +77,15 @@
         src="https://res.cloudinary.com/jeissong/video/upload/v1646861419/Portafolio/mixkit-software-developer-working-while-drinks-coffee-1730_ec99kw.mp4"
         type="video/mp4"></video>
     </div>
-    <div class="content">
-      <h1>Hola, soy Jeisson Gomez</h1>
-      <h2>Frontend Developer</h2>
+    <div class="home__data">
+      <h1 class="home__title">Hola, soy Jeisson Gomez</h1>
+      <h2 class="home__subtitle">Frontend Developer</h2>
     </div>
   </section>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="main.js"></script>
 </body>
 
