@@ -243,6 +243,7 @@ nav li:hover {
 
 .container {
   position: relative;
+  z-index: -1;
   height: 100vh;
 }
 
