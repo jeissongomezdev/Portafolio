@@ -94,13 +94,6 @@ body {
   color: var(--text-color);
 }
 
-h1,
-h2,
-h3 {
-  color: var(--title-color);
-  font-weight: var(--font-semibold);
-}
-
 svg {
   width: 100%;
   display: block;
@@ -118,14 +111,14 @@ header {
 }
 
 .header-row {
-  padding: 40px 60px;
+  padding: 2.5rem 3.75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .brand-logo img {
-  height: 40px;
+  height: 2.5rem;
 }
 
 .menu-toggle {
@@ -136,7 +129,7 @@ header {
 
 .hamburger path {
   fill: none;
-  stroke: var(--first-color);
+  stroke: var(--text-color-dark);
   stroke-linecap: round;
 }
 
@@ -152,7 +145,7 @@ header {
   display: flex;
   align-items: center;
   height: 100%;
-  padding: 100px 60px;
+  padding: 6.25rem 3.75rem;
 }
 .menu-bg {
   height: 100%;
@@ -181,10 +174,10 @@ nav li {
   transition: transform 300ms ease-in-out 0s;
 }
 nav li + li {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 nav li a {
-  font-size: 100px;
+  font-size: 6.25rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -203,7 +196,7 @@ nav li:hover {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 40px 60px;
+  padding: 2.5rem 3.75rem;
 }
 .social-links {
   list-style-type: none;
@@ -212,11 +205,11 @@ nav li:hover {
   width: 100%;
 }
 .social-links li {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
 }
 .social-links li + li {
-  margin-left: 16px;
+  margin-left: 1rem;
 }
 .social-links a {
   color: #ffffff;
@@ -226,16 +219,16 @@ nav li:hover {
 @media screen and (max-width: 767px) {
   .header-row,
   .header-nav-footer {
-    padding: 30px;
+    padding: 1.875rem;
   }
   .fullpage-menu-inner {
-    padding: 70px 30px;
+    padding: 4.375rem 1.875rem;
   }
   nav li a {
-    font-size: 54px;
+    font-size: 3.375rem;
   }
   .social-links li {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -273,7 +266,47 @@ nav li:hover {
   height: 100vh;
 }
 
-.home__data h1,
-h2 {
-  color: var(--body-color);
+.home__title {
+  color: var(--title-color-dark);
+  font-size: 1.6875rem;
 }
+
+.home__subtitle {
+  color: var(--title-color-dark);
+  font-size: 3.125rem;
+  font-weight: var(--font-semibold);
+}
+
+.home__profession {
+  color: var(--title-color-dark);
+  font-size: 1.6875rem;
+}
+
+.home__profession span {
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+}
+
+/* Buttons */
+
+.button {
+  background-color: var(--first-color);
+  color: var(--container-color);
+  padding: 0.75rem 1rem;
+  margin-top: 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  transition: all 0.3s ease;
+}
+
+/* ! actualizar */
+.button:hover {
+  color: var(--first-color);
+  background: none;
+}
+
+/* Sobre mí */
+
+/* Proyectos */
+
+/* Contacto */

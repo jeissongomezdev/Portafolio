@@ -80,3 +80,11 @@ menuToggle.addEventListener("click", function () {
   menuBar.reversed(!menuBar.reversed());
   tl.reversed(!tl.reversed());
 });
+
+/* Intro Landing Animation */
+
+gsap.from(".home__data > *", 2, {
+  opacity: 0,
+  delay: 0.5,
+  stagger: 1,
+});
