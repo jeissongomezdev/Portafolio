@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,14 +27,13 @@
   <meta name="theme-color" content="#ffffff" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <!--========== HEADER ==========-->
   <header>
     <div class="header-row">
       <div class="brand-logo">
         <a aria-label="Home" href="#"></a>
-          <img src="assets/logo_JG.png" alt="Jeisson Gómez" />
+          <img src="assets/logo_JG.png" alt="Logo Jeisson Gómez" />
         </a>
       </div>
       <button class="menu-toggle" id="menuToggle">
@@ -58,6 +56,7 @@
         <ul class="main-menu">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#sobremi">Sobre mi</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#proyectos">Proyectos</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
@@ -73,7 +72,7 @@
     </div>
   </section>
   <!--========== HOME ==========-->
-  <section class="container">
+  <section class="container" id="inicio">
     <div class="home-hero">
       <video preload="true" autoplay loop muted playsinline source
         src="https://res.cloudinary.com/jeissong/video/upload/v1646861419/Portafolio/mixkit-software-developer-working-while-drinks-coffee-1730_ec99kw.mp4"
@@ -83,28 +82,41 @@
       <h3 class="home__title">Hola, mi nombre es</h3>
       <h1 class="home__subtitle">Jeisson Gómez</h1>
       <h2 class="home__profession">Y soy <span>Frontend Developer</span></h2>
-      <a href="#contacto" class="button">Contacto</a>
+      <a href="#proyectos" class="button">Ver Proyectos</a>
     </div>
   </section>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
-    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="main.js"></script>
-
   <!--========== SOBRE MI ==========-->
-  <section class="about-section">
-
+  <section class="about-section" id="sobremi">
+    <h2 class="section__tittle">Sobre Mí</h2>
+    <span class="section__subtitle">Desarrollador Frontend</span>
+    <div class="about__container grid">
+      <img src="https://res.cloudinary.com/jeissong/image/upload/f_auto,q_auto/v1647968795/Portafolio/business_3d_wsiesc.png" alt="joven presentándose" class="about__img">
+      <div class="about__data">
+        <p class="about__description">Durante bastante tiempo me destaque en roles de Servicio al Cliente, simplemente me gusta tratar a las personas como me gustaría que lo hicieran conmigo.</p>
+        <p>Me cautivo la programación por primera vez en 2020, debido al aislamiento obligatorio y con mas tiempo libre en mi casa empecé a buscar información desde lo básico aventurándome cada vez mas en este grandioso mundo. Específicamente, aprendí desarrollo web ya que me intrigaba la forma en que se podía crear un sitio web atractivo visualmente para una persona.</p>
+        <p>Luego de unos meses de aprendizaje, rompiendo mi código, aprendiendo de mis errores y practicando día a día. Supe que era lo que quería hacer profesionalmente en mi vida, se que es un camino largo, pero no tengo afán de llegar al final. Tal vez ese lenguaje o framework que me gusta usar hoy en día este obsoleto en un par de años. Sin embargo, es interesante para mi aprender nuevas tecnologías y herramientas.</p>
+        <p>Por lo general estaré creando componentes llamativos en <strong>React</strong>, profundizando mi conocimiento en <strong>JavaScript</strong>, creando animaciones ingeniosas con <strong>GSAP</strong>, puliendo cada píxel con <strong>CSS</strong> y maquetando semánticamente ese nuevo proyecto en <strong>HTML</strong>. Mas allá de las herramientas utilizadas, me gusta brindar soluciones innovadoras con experiencias de usuario excepcionales, Esto mientras me ocupo del diseño, la accesibilidad, el rendimiento y el código bien estructurado.</p>
+        <p>Además, me gusta mantenerme informado sobre tecnologías nuevas y en desarrollo, me llama bastante la atención el mundo <strong>Blockchain</strong> y de <strong>Criptomonedas</strong>. Es un momento perfecto para ser desarrollador y espero con ansias las oportunidades que se avecinan con la <strong>Web 3.0</strong> y tal vez, porque no, programando los productos del futuro.</p>
+        <p>En este momento estoy en la búsqueda de un empleo en el que pueda contribuir con mis habilidades a cumplir los objetivos de una empresa a la par que gano experiencia para crecer profesionalmente.</p>
+        <div class="about__button">
+        <a download="Frontend_Developer_Jeisson_Gomez.pdf" href="docs/prueba.pdf" target="_blank" rel="noopener noreferrer" class="button">Descargar CV</a>
+        </div>
+      </div>
+    </div>
   </section>
   <!--========== PROYECTOS ==========-->
-  <section class="projects">
-
+  <section class="projects" id="proyectos">
+    <h2 class="section__tittle">Proyectos</h2>
+    <span class="section__subtitle">Trabajando en esto, pronto subiré mis proyectos</span>
+    <img src="assets/Hand_coding.svg" alt="trabajando en proyectos">
   </section>
   <!--========== CONTACTO ==========-->
-  <section class="contact">
+  <section class="contact" id="contacto">
 
   </section>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
