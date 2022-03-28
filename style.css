@@ -325,9 +325,9 @@ nav li:hover {
 
 /* Sobre mí */
 
-.section__tittle,
-.section__subtitle {
+.section__tittle {
   text-align: center;
+  margin-top: 1.25rem;
 }
 
 .about__img {
@@ -339,7 +339,28 @@ p {
   margin: 2rem 1.25rem;
 }
 
-.about__button {
+/* Habilidades */
+
+.skills__container {
+  margin: 1.25rem;
+}
+
+.skills__container span {
+  display: flex;
+  justify-content: center;
+}
+
+.front {
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.others {
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.skills__button {
   display: flex;
   justify-content: center;
 }
