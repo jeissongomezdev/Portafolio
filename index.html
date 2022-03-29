@@ -83,7 +83,7 @@
       name="msapplication-TileImage"
       content="/favicon/ms-icon-144x144.png"
     />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#0059f7" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -262,7 +262,24 @@
       <img src="assets/Hand_coding.svg" alt="Trabajando en proyectos" />
     </section>
     <!--========== CONTACTO ==========-->
-    <section class="contact" id="contacto"></section>
+    <section class="contact" id="contacto">
+      <h2 class="section__tittle">Contacto</h2>
+      <div class="contact__intro">
+        <p>¿Quieres preguntar algo? ¿Necesitas ayuda en tu nuevo proyecto? ¿Tienes una oportunidad laboral?</p>
+        <p>Usa el siguiente formulario o envíame un correo electrónico a <strong><a href="mailto:jeissongomez@hotmail.es">jeissongomez@hotmail.es</a></strong> </p>
+      </div>
+      <div class="contact__container grid">
+        <form action="" class="contact__form">
+          <label for="name">Nombre *</label>
+          <input id="name" type="text" required="true" class="contact__input">
+          <label for="email">Email *</label>
+          <input id="email "type="email" required="true" class="contact__input">
+          <label for="message">Mensaje *</label>
+          <textarea name="message" id="message" cols="0" rows="10" required="true" class="contact__input"></textarea>
+          <input type="button" value="Enviar" class="contact__button button">
+        </form>
+      </div>
+    </section>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
