@@ -19,8 +19,6 @@
   /* Font and typography */
 
   --body-font: "Poppins", sans-serif;
-  --biggest-font-size: 1.75rem;
-  --h1-font-size: 1.75rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: 0.938rem;
@@ -111,12 +109,6 @@ svg {
   font-size: var(--h2-font-size);
   color: var(--first-color);
   margin-bottom: 2rem;
-}
-
-.section__subtitle {
-  display: block;
-  font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
 }
 
 /* Header */
@@ -235,22 +227,6 @@ nav li:hover {
   text-decoration: none;
 }
 
-@media screen and (max-width: 767px) {
-  .header-row,
-  .header-nav-footer {
-    padding: 1.875rem;
-  }
-  .fullpage-menu-inner {
-    padding: 4.375rem 1.875rem;
-  }
-  nav li a {
-    font-size: 3.375rem;
-  }
-  .social-links li {
-    font-size: 1rem;
-  }
-}
-
 /* Home */
 
 .container {
@@ -279,26 +255,26 @@ nav li:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  margin: auto 0 auto 2.5rem;
   position: relative;
   z-index: 1;
   height: 100vh;
 }
 
-.home__title {
+.home__scroll {
+  width: 5rem;
+}
+
+.home__title,
+.home__profession {
   color: var(--title-color-dark);
-  font-size: 1.375rem;
+  font-size: 1.5rem;
 }
 
 .home__subtitle {
   color: var(--title-color-dark);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: var(--font-semibold);
-}
-
-.home__profession {
-  color: var(--title-color-dark);
-  font-size: 1.375rem;
 }
 
 .home__profession span {
@@ -390,4 +366,78 @@ p {
   outline: none;
   cursor: pointer;
   margin-left: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .home__title,
+  .home__profession {
+    font-size: 2rem;
+  }
+  .home__subtitle {
+    font-size: 3.125rem;
+  }
+  .home__scroll {
+    width: 7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-row,
+  .header-nav-footer {
+    padding: 1.875rem;
+  }
+  .fullpage-menu-inner {
+    padding: 4.375rem 1.875rem;
+  }
+  nav li a {
+    font-size: 3.375rem;
+  }
+  .social-links li {
+    font-size: 1rem;
+  }
+  .home__data {
+    margin: auto 0 auto 70px;
+  }
+  .home__title,
+  .home__profession {
+    font-size: 2.625rem;
+  }
+  .home__subtitle {
+    font-size: 4.375rem;
+  }
+  .home__scroll {
+    width: 9rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .home__data {
+    margin: auto 0 auto 90px;
+  }
+  .home__title,
+  .home__profession {
+    font-size: 52px;
+  }
+  .home__subtitle {
+    font-size: 90px;
+  }
+  .home__scroll {
+    width: 11rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home__data {
+    margin: auto 0 auto 100px;
+  }
+  .home__title,
+  .home__profession {
+    font-size: 62px;
+  }
+  .home__subtitle {
+    font-size: 110px;
+  }
+  .home__scroll {
+    width: 13rem;
+  }
 }

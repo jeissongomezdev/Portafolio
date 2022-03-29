@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portafolio Jeisson Gómez, Desarrollador Frontend" />
+    <meta
+      name="description"
+      content="Portafolio Jeisson Gómez, Desarrollador Frontend"
+    />
     <meta name="author" content="Jeisson Gómez" />
     <meta name="title" content="Jeisson Gómez - Frontend Developer" />
     <title>Jeisson Gómez | Frontend Developer</title>
@@ -89,47 +92,65 @@
   <body>
     <!--========== HEADER ==========-->
     <header>
-    <div class="header-row">
-      <div class="brand-logo">
-        <a aria-label="Home" href="#"></a>
+      <div class="header-row">
+        <div class="brand-logo">
+          <!-- <a aria-label="Home" href="#"></a>
           <img src="assets/logo_JG.png" alt="Logo Jeisson Gómez" />
-        </a>
+        </a> -->
+        </div>
+        <button class="menu-toggle" id="menuToggle">
+          <svg
+            viewBox="0 0 12 10"
+            class="hamburger"
+            height="2.5rem"
+            width="2.5rem"
+          >
+            <path d="M10,2 L2,2" class="bar-1"></path>
+            <path d="M2,5 L10,5" class="bar-2"></path>
+            <path d="M10,8 L2,8" class="bar-3"></path>
+          </svg>
+        </button>
       </div>
-      <button class="menu-toggle" id="menuToggle">
-        <svg viewBox="0 0 12 10" class="hamburger" height="2.5rem" width="2.5rem">
-          <path d="M10,2 L2,2" class="bar-1"></path>
-          <path d="M2,5 L10,5" class="bar-2"></path>
-          <path d="M10,8 L2,8" class="bar-3"></path>
-        </svg>
-      </button>
-    </div>
-  </header>
-  <section class="fullpage-menu">
-    <div class="fullpage-menu-inner">
-      <div class="menu-bg">
-        <span></span>
-        <span></span>
-        <span></span>
+    </header>
+    <section class="fullpage-menu">
+      <div class="fullpage-menu-inner">
+        <div class="menu-bg">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul class="main-menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobremi">Sobre mi</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="header-nav-footer">
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/jeissongomezdev/"
+                target="_blank"
+                rel="noopener"
+                rel="noopener"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/jeissongomezdev"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      <nav>
-        <ul class="main-menu">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobremi">Sobre mi</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-      <div class="header-nav-footer">
-        <ul class="social-links">
-          <li>
-            <a href="https://www.linkedin.com/in/jeissongomezdev/" target="_blank" rel="noopener" rel="noopener">LinkedIn</a>
-          </li>
-          <li><a href="https://github.com/jeissongomezdev" target="_blank" rel="noopener">GitHub</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
     <!--========== HOME ==========-->
     <section class="container" id="inicio">
       <div class="home-hero">
@@ -148,6 +169,15 @@
         <h3 class="home__title">Hola, mi nombre es</h3>
         <h1 class="home__subtitle">Jeisson Gómez</h1>
         <h2 class="home__profession">Soy <span>Frontend Developer</span></h2>
+        <div class="home__scroll">
+          <lottie-player
+            src="https://assets10.lottiefiles.com/packages/lf20_rew54vud.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
       </div>
     </section>
     <!--========== SOBRE MI ==========-->
@@ -198,85 +228,112 @@
       <h2 class="section__tittle">Habilidades</h2>
       <div class="skills__container grid">
         <h3>Frontend</h3>
-          <div class="front grid">
-            <div>
-              <img src="assets/react.svg" alt="Logo React">
-              <span>React</span>
-            </div>
-            <div>
-              <img src="assets/gsap-greensock.svg" alt="Logo GSAP">
-              <span>Gsap</span>
-            </div>
-            <div>
-              <img src="assets/sass.svg" alt="Logo SASS">
-              <span>Sass</span>
-            </div>
-            <div>
-              <img src="assets/javascript.svg" alt="Logo JavaScript">
-              <span>JavaScript</span>
-            </div>
-            <div>
-              <img src="assets/css3.svg" alt="Logo CSS">
-              <span>Css</span>
-            </div>
-            <div>
-              <img src="assets/html.svg" alt="Logo HTML">
-              <span>Html</span>
-            </div>
+        <div class="front grid">
+          <div>
+            <img src="assets/react.svg" alt="Logo React" />
+            <span>React</span>
           </div>
+          <div>
+            <img src="assets/gsap-greensock.svg" alt="Logo GSAP" />
+            <span>Gsap</span>
+          </div>
+          <div>
+            <img src="assets/sass.svg" alt="Logo SASS" />
+            <span>Sass</span>
+          </div>
+          <div>
+            <img src="assets/javascript.svg" alt="Logo JavaScript" />
+            <span>JavaScript</span>
+          </div>
+          <div>
+            <img src="assets/css3.svg" alt="Logo CSS" />
+            <span>Css</span>
+          </div>
+          <div>
+            <img src="assets/html.svg" alt="Logo HTML" />
+            <span>Html</span>
+          </div>
+        </div>
         <h3>Otros</h3>
-          <div class="others grid">
-            <div>
-              <img src="assets/git.svg" alt="Logo Git">
-              <span>Git</span>
-            </div>
-            <div>
-              <img src="assets/github.svg" alt="Logo GitHub">
-              <span>GitHub</span>
-            </div>
-            <div>
-              <img src="assets/terminal.svg" alt="Terminal">
-              <span>Terminal</span>
-            </div>
-            <div>
-              <img src="assets/visual-studio-code.svg" alt="Logo Visual Studio Code">
-              <span>Visual Studio Code</span>
-            </div>
+        <div class="others grid">
+          <div>
+            <img src="assets/git.svg" alt="Logo Git" />
+            <span>Git</span>
           </div>
-          <div class="skills__button">
-              <a
-                download="Jeisson_Gomez_Frontend_Developer.pdf"
-                href="docs/prueba.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="button"
-                >Descargar CV</a
-              >
-            </div>
+          <div>
+            <img src="assets/github.svg" alt="Logo GitHub" />
+            <span>GitHub</span>
+          </div>
+          <div>
+            <img src="assets/terminal.svg" alt="Terminal" />
+            <span>Terminal</span>
+          </div>
+          <div>
+            <img
+              src="assets/visual-studio-code.svg"
+              alt="Logo Visual Studio Code"
+            />
+            <span>Visual Studio Code</span>
+          </div>
+        </div>
+        <div class="skills__button">
+          <a
+            download="Jeisson_Gomez_Frontend_Developer.pdf"
+            href="docs/prueba.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+            >Descargar CV</a
+          >
+        </div>
       </div>
     </section>
     <!--========== PROYECTOS ==========-->
     <section class="projects" id="proyectos">
       <h2 class="section__tittle">Proyectos</h2>
-      <h3 class="section__subtitle">Trabajando en esto, pronto subiré mis proyectos</h3>
+      <h3 class="section__subtitle">
+        Trabajando en esto, pronto subiré mis proyectos
+      </h3>
       <img src="assets/Hand_coding.svg" alt="Trabajando en proyectos" />
     </section>
     <!--========== CONTACTO ==========-->
     <section class="contact" id="contacto">
       <h2 class="section__tittle">Contacto</h2>
       <div class="contact__intro">
-        <p>¿Quieres preguntar algo? ¿Necesitas ayuda en tu nuevo proyecto? ¿Tienes una oportunidad laboral?</p>
-        <p>Usa el siguiente formulario o envíame un correo electrónico a <strong><a href="mailto:jeissongomez@hotmail.es">jeissongomez@hotmail.es</a></strong> </p>
+        <p>
+          ¿Quieres preguntar algo? ¿Necesitas ayuda en tu nuevo proyecto?
+          ¿Tienes una oportunidad laboral?
+        </p>
+        <p>
+          Usa el siguiente formulario o envíame un correo electrónico a
+          <strong
+            ><a href="mailto:jeissongomez@hotmail.es"
+              >jeissongomez@hotmail.es</a
+            ></strong
+          >
+        </p>
       </div>
       <div class="contact__container grid">
         <form action="" class="contact__form">
           <label for="name">Nombre *</label>
-          <input id="name" type="text" required="true" class="contact__input">
+          <input id="name" type="text" required="true" class="contact__input" />
           <label for="email">Email *</label>
-          <input id="email "type="email" required="true" class="contact__input">
+          <input
+            id="email "
+            type="email"
+            required="true"
+            class="contact__input"
+          />
           <label for="message">Mensaje *</label>
-          <textarea name="message" id="message" cols="0" rows="10" required="true" class="contact__input"></textarea>
-          <input type="button" value="Enviar" class="contact__button button">
+          <textarea
+            name="message"
+            id="message"
+            cols="0"
+            rows="10"
+            required="true"
+            class="contact__input"
+          ></textarea>
+          <input type="button" value="Enviar" class="contact__button button" />
         </form>
       </div>
     </section>
