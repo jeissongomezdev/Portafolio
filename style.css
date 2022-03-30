@@ -108,7 +108,8 @@ svg {
 .section__tittle {
   font-size: var(--h2-font-size);
   color: var(--first-color);
-  margin-bottom: 2rem;
+  margin: 2rem 0;
+  text-align: center;
 }
 
 /* Header */
@@ -290,10 +291,10 @@ nav li:hover {
   margin-top: 1.25rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
+  border: 2px solid var(--first-color);
   transition: all 0.3s ease;
 }
 
-/* ! actualizar */
 .button:hover {
   color: var(--first-color);
   background: none;
@@ -301,14 +302,8 @@ nav li:hover {
 
 /* Sobre mí */
 
-.section__tittle {
-  text-align: center;
-  margin-top: 1.25rem;
-}
-
-.about__img {
-  width: 220px;
-  justify-self: center;
+.about__container {
+  max-width: 1200px;
 }
 
 p {
@@ -342,6 +337,10 @@ p {
 }
 /* Proyectos */
 
+.section__subtitle {
+  text-align: center;
+}
+
 /* Contacto */
 
 .contact__container {
@@ -362,10 +361,47 @@ p {
 
 .contact__button {
   display: block;
-  border: none;
   outline: none;
   cursor: pointer;
   margin-left: auto;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--container-color-dark);
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.footer__link {
+  color: var(--body-color);
+  margin: 0.5rem 0.5rem;
+  padding-left: 1rem;
+}
+
+.footer__link:hover {
+  color: var(--first-color);
+}
+
+.footer__love {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__copy {
+  color: var(--body-color);
+  text-align: center;
+}
+
+.footer__img {
+  width: 3.75rem;
 }
 
 @media screen and (min-width: 480px) {
