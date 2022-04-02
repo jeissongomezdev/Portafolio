@@ -1,90 +1,45 @@
-/* Menu Navigation */
-var menuToggle = document.getElementById("menuToggle");
+/* Change Background Header */
+function scrollHeader() {
+  const nav = document.getElementById("header");
+  // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+  if (this.scrollY >= 200) nav.classList.add("scroll-header");
+  else nav.classList.remove("scroll-header");
+}
+window.addEventListener("scroll", scrollHeader);
 
-var menuBar = gsap.timeline();
+/* Show Menu */
 
-menuBar.to(
-  ".bar-1",
-  0.5,
-  {
-    attr: { d: "M8,2 L2,8" },
-    x: 1,
-    ease: Power2.easeInOut,
-  },
-  "start"
-);
+const showMenu = (toggleId, navId) => {
+  const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId);
 
-menuBar.to(
-  ".bar-2",
-  0.5,
-  {
-    autoAlpha: 0,
-  },
-  "start"
-);
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("show-menu");
+    });
+  }
+};
+showMenu("nav-toggle", "nav-menu");
 
-menuBar.to(
-  ".bar-3",
-  0.5,
-  {
-    attr: { d: "M8,8 L2,2" },
-    x: 1,
-    ease: Power2.easeInOut,
-  },
-  "start"
-);
+/* Remove Menu Mobile */
 
-menuBar.reverse();
+const navLink = document.querySelectorAll(".nav__link");
 
-var tl = gsap.timeline({ paused: true });
-
-tl.to(".fullpage-menu", {
-  duration: 0,
-  display: "block",
-  ease: "Expo.easeInOut",
-});
-
-tl.from(".menu-bg span", {
-  duration: 1,
-  x: "100%",
-  stagger: 0.1,
-  ease: "Expo.easeInOut",
-});
-
-tl.from(
-  ".main-menu li a",
-  {
-    duration: 1.5,
-    y: "100%",
-    stagger: 0.2,
-    ease: "Expo.easeInOut",
-  },
-  "-=0.5"
-);
-
-tl.from(
-  ".social-links li",
-  {
-    duration: 1,
-    y: "-100%",
-    opacity: 0,
-    stagger: 0.1,
-    ease: "Expo.easeInOut",
-  },
-  "-=0.5"
-);
-
-tl.reverse();
-
-menuToggle.addEventListener("click", function () {
-  menuBar.reversed(!menuBar.reversed());
-  tl.reversed(!tl.reversed());
-});
+function linkAction() {
+  const navMenu = document.getElementById("nav-menu");
+  navMenu.classList.remove("show-menu");
+}
+navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /* Intro Landing Animation */
-
-gsap.from(".home__data > *", 2, {
+gsap.from(".l-header > *", 1, {
   opacity: 0,
   delay: 0.5,
-  stagger: 1,
+  stagger: 0.5,
+});
+
+gsap.from(".home__data > *", 1, {
+  opacity: 0,
+  delay: 0.5,
+  stagger: 0.5,
 });
