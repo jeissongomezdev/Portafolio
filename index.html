@@ -322,6 +322,7 @@
           ></lottie-player>
         </div>
         <form
+          id="form"
           target="_blank"
           action="https://formsubmit.co/jeissongomez@hotmail.es"
           method="POST"
@@ -337,13 +338,14 @@
           />
           <label for="email">Email *</label>
           <input
-            id="email "
+            id="email"
             type="email"
             name="email"
             required
             class="contact__input"
           />
           <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_subject" value="Contacto página web" />
           <label for="message">Mensaje *</label>
           <textarea
             name="message"
