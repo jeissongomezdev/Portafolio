@@ -126,8 +126,8 @@
           <i class="bx bx-menu"></i>
         </div>
       </nav>
-      <!-- <div class="header-nav-footer">
-        <ul class="social-links">
+      <div class="social">
+        <ul class="social__links">
           <li>
             <a
               href="https://www.linkedin.com/in/jeissongomezdev/"
@@ -147,7 +147,8 @@
             ></a>
           </li>
         </ul>
-      </div> -->
+      </div>
+      <div class="verticalLine"></div>
     </header>
     <!--========== HOME ==========-->
     <section class="container" id="inicio">
@@ -179,16 +180,18 @@
       </div>
     </section>
     <!--========== SOBRE MI ==========-->
-    <section class="about-section" id="sobremi">
+    <section class="about-section bd-container" id="sobremi">
       <h2 class="section__tittle">Sobre Mí</h2>
       <div class="about__container grid">
-        <lottie-player
-          src="https://assets1.lottiefiles.com/packages/lf20_ugbckvu9.json"
-          background="transparent"
-          speed="1"
-          loop
-          autoplay
-        ></lottie-player>
+        <div class="about__img">
+          <lottie-player
+            src="https://assets1.lottiefiles.com/packages/lf20_ugbckvu9.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
         <div class="about__data">
           <p class="about__description">
             Durante bastante tiempo me destaque en roles de Servicio al Cliente,
@@ -222,11 +225,11 @@
       </div>
     </section>
     <!--========== HABILIDADES ==========-->
-    <section class="skills" id="habilidades">
+    <section class="skills bd-container" id="habilidades">
       <h2 class="section__tittle">Habilidades</h2>
       <div class="skills__container grid">
         <h3>Frontend</h3>
-        <div class="front grid">
+        <div class="skills__front grid">
           <div class="card">
             <img src="assets/html.svg" alt="Logo HTML" />
             <span>HTML</span>
@@ -253,7 +256,7 @@
           </div>
         </div>
         <h3>Otros</h3>
-        <div class="others grid">
+        <div class="skills__others grid">
           <div class="card">
             <img src="assets/git.svg" alt="Logo Git" />
             <span>Git</span>
@@ -287,7 +290,7 @@
       </div>
     </section>
     <!--========== PROYECTOS ==========-->
-    <section class="projects" id="proyectos">
+    <section class="projects bd-container" id="proyectos">
       <h2 class="section__tittle">Proyectos</h2>
       <h3 class="section__subtitle">
         Trabajando en esto, pronto subiré mis proyectos
@@ -295,7 +298,7 @@
       <img src="assets/Hand_coding.svg" alt="Trabajando en proyectos" />
     </section>
     <!--========== CONTACTO ==========-->
-    <section class="contact" id="contacto">
+    <section class="contact bd-container" id="contacto">
       <h2 class="section__tittle">Contacto</h2>
       <div class="contact__intro">
         <p>
