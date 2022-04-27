@@ -19,11 +19,10 @@
   /* Font and typography */
 
   --body-font: "Poppins", sans-serif;
-  --h2-font-size: 1.25rem;
+  --h2-font-size: 1.375rem;
   --h3-font-size: 1.0625rem;
   --normal-font-size: 1.125rem;
-  --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
+  --small-font-size: 0.875rem;
 
   /* Font Weight */
 
@@ -113,6 +112,13 @@ section {
   color: var(--first-color);
   margin: 2rem 0;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.section__subtitle {
+  text-align: center;
+  font-weight: var(--font-medium);
 }
 
 .bd-container {
@@ -234,30 +240,40 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 2.5rem;
+  padding: 0 1.4375rem;
   position: relative;
   z-index: 1;
   height: calc(100% - 40px);
 }
 
 .home__scroll {
-  width: 5rem;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  margin: -100px 0;
 }
 
-.home__title,
-.home__profession {
+.home__title {
   color: var(--title-color);
-  font-size: 1.5rem;
+  font-size: 1.4375rem;
+  font-weight: var(--font-medium);
 }
 
 .home__subtitle {
   color: var(--first-color);
-  font-size: 2.5rem;
+  font-size: 2.6875rem;
   font-weight: var(--font-semibold);
+}
+
+.home__profession {
+  color: var(--title-color);
+  font-size: 1.6875rem;
+  font-weight: var(--font-medium);
 }
 
 .home__profession span {
   color: var(--first-color);
+  font-weight: var(--font-semibold);
 }
 
 /* Buttons */
@@ -284,10 +300,6 @@ section {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-.about__img {
-  width: 250px;
 }
 
 p {
@@ -318,6 +330,7 @@ p {
 .skills__container span {
   display: flex;
   justify-content: center;
+  font-size: var(--small-font-size);
   font-weight: var(--font-semibold);
   margin-top: 1rem;
 }
@@ -335,10 +348,6 @@ p {
   justify-content: center;
 }
 /* Proyectos */
-
-.section__subtitle {
-  text-align: center;
-}
 
 /* Contacto */
 
@@ -514,12 +523,14 @@ p {
   .home__data {
     margin: auto 0 auto 100px;
   }
-  .home__title,
-  .home__profession {
-    font-size: 62px;
+  .home__title {
+    font-size: 48px;
   }
   .home__subtitle {
     font-size: 110px;
+  }
+  .home__profession {
+    font-size: 62px;
   }
   .home__scroll {
     width: 13rem;
