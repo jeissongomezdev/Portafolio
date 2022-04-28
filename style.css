@@ -240,7 +240,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 1.4375rem;
+  margin: 0 1.4375rem;
   position: relative;
   z-index: 1;
   height: calc(100% - 40px);
@@ -333,6 +333,7 @@ p {
   font-size: var(--small-font-size);
   font-weight: var(--font-semibold);
   margin-top: 1rem;
+  text-transform: uppercase;
 }
 
 .skills__front {
@@ -434,22 +435,19 @@ p {
 }
 
 @media screen and (min-width: 480px) {
-  .home__title,
-  .home__profession {
-    font-size: 2rem;
+  .home__title {
+    font-size: 1.75rem;
   }
   .home__subtitle {
     font-size: 3.125rem;
   }
-  .home__scroll {
-    width: 7rem;
+  .home__profession {
+    font-size: 2rem;
   }
-
-  .skills__front {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .skills__others {
-    grid-template-columns: repeat(3, 1fr);
+  .bd-container {
+    width: calc(100% - 3.125rem);
+    margin-left: 1.5625rem;
+    margin-right: 1.5625rem;
   }
 }
 
@@ -475,7 +473,7 @@ p {
     font-size: 2rem;
   }
   .home__data {
-    margin: auto 0 auto 70px;
+    margin: 0 3rem;
   }
   .home__title,
   .home__profession {
