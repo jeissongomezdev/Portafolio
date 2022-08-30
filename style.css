@@ -189,6 +189,9 @@ section {
 
 .scroll-header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(243, 243, 243, 0.2);
 }
 
 /* Social Media */
