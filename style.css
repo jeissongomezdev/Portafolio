@@ -410,13 +410,19 @@ p {
 
 .contact__input {
   width: 100%;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semibold);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1.5px solid var(--text-color);
-  outline: none;
   margin-bottom: 2rem;
+  outline: none;
+  padding: 1rem;
+  transition: 0.3s ease all;
+}
+
+.contact__input:focus {
+  border: 2px solid var(--first-color);
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 
 .contact__button {
